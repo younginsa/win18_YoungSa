@@ -4,16 +4,21 @@ $(document).ready(function(){
    console.log('clicked!');
    var sketchItem = $('input[name=sketchListItem]').val();
     $('.list').append('<div class="item">'+sketchItem+'</div>');
-    });
+  });
 
-
+  $(document).on('dblclick','.item',function(){
+      $(this).remove();
+  });
+  
     $(document).on('click','.item',function(){
       var searchIt = $(this).text();
       console.log('searchIt')
       myFunction(searchIt);
-      $(this).remove();
-
+      $(this).addClass('donelist');
     });
+
+
+
   });
 
 
