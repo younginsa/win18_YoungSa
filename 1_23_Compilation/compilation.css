@@ -84,7 +84,7 @@ body{
   color: rgba(13,245,10,1);
 }
 .one{
-  top: 11vh;
+  top: 5vh;
   left: 8vw;
 }
 .two{
@@ -119,8 +119,8 @@ body{
 }
 .ExOne{
   color: #b7b12a;
-
 }
+
 
 /*---pop-up---*/
 .Tip{
