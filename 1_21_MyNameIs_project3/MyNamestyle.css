@@ -67,6 +67,7 @@ body{
   transform: translate3d(0px, 0px, 0px);
 }
 
+
 /*---animation slide left styled---*/
 .AniBlock.newBorn{
   position: absolute;
@@ -111,7 +112,6 @@ body{
   background: rgba(13,245,10,.4);
   box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.2);
   z-index: 7;
-  /* animation: bounceIn .7s linear 1; */
 }
 .CAlife{
   position: absolute;
@@ -120,14 +120,99 @@ body{
   width: 80px;
   height: 80px;
   border-radius: 40px;
-  /* opacity: 0; */
-  /* transition: all 500ms linear;
-  transform: translate3d(-100px, 0px, 0px); */
   float: left;
   background: rgba(13,245,10,.4);
   box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.2);
   z-index: 7;
   animation: bounceIn 1s linear 1;
+}
+.IMF{
+  position: absolute;
+  color: black;
+  font-size: 1rem;
+  font-family: 'VT323', monospace;
+  text-align: center;
+  top: 1366px;
+  left: 641px;
+  z-index: 7;
+}
+.period{
+  position: absolute;
+  top: 440px;
+  left: 862px;
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  float: left;
+  background: rgba(255,4,4,.5);
+  z-index: 7;
+  animation: bounceIn 1s linear 1;
+}
+.Naruto{
+  position: absolute;
+  top: 136px;
+  left: 1093px;
+  width: 16px;
+  height: 16px;
+  border-radius: 8px;
+  float: left;
+  background: rgba(4, 243, 255, 0.5);
+  z-index: 7;
+  animation: bounceIn 1s linear 1;
+}
+.Marionette{
+  position: absolute;
+  top: 156px;
+  left: 1166px;
+  width: 16px;
+  height: 16px;
+  border-radius: 8px;
+  float: left;
+  background: rgba(4, 243, 255, 0.5);
+  z-index: 7;
+  animation: bounceIn 1s linear 1;
+}
+.Slayers{
+  position: absolute;
+  top: 856px;
+  left: 1166px;
+  width: 16px;
+  height: 16px;
+  border-radius: 8px;
+  float: left;
+  background: rgba(4, 243, 255, 0.5);
+  z-index: 7;
+  animation: bounceIn 1s linear 1;
+}
+
+.Depression{
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  float: left;
+  background: rgba(255,245,1,.7);
+  z-index: 7;
+  animation: bounceIn 1s linear 1;
+}
+.Zero{
+  top: 113px;
+  left: 1008px;
+}
+.First{
+  top: 213px;
+  left: 1081px;
+}
+.Second{
+  top: 613px;
+  left: 1081px;
+}
+.Third{
+  top: 338px;
+  left: 1154px;
+}
+.Forth{
+  top: 389px;
+  left: 1154px;
 }
 
 .married{
@@ -144,7 +229,7 @@ body{
   z-index: 7;
 }
 .married.show2 {
-  transform: translateX(450px) rotate(720deg);
+  transform: translateX(597px) rotate(720deg);
   opacity: 1;
 }
 
@@ -156,24 +241,27 @@ body{
   text-align: center;
   z-index: 7;
 }
-.Wedding{
-  position: absolute;
-  color: black;
-  font-size: 1rem;
-  font-family: 'VT323', monospace;
-  text-align: center;
-  z-index: 7;
-  top:500px;
-  left: 1955px;
-}
-.One{
+.March{
   top: 500px;
   left: 276px;
 }
-.Two{
-  top: 900px;
-  left: 1955px;
+.Vanziha{
+  top:580px;
+  left: 2028px;
 }
+.SungBook{
+  top:200px;
+  left: 2101px;
+}
+.Wedding{
+  top:504px;
+  left: 2101px;
+}
+.FourOneThree{
+  top: 900px;
+  left: 2101px;
+}
+
 
 /*---pop-up---*/
 .Tip{
@@ -201,6 +289,10 @@ body{
   }
 
 /*---hover events---*/
+.yearPos:hover{
+
+}
+
 .AniBlock.newBorn:hover{
   box-shadow: 0px 0px 30px 10px rgba(255, 152, 0, .7);
 }
@@ -218,6 +310,16 @@ body{
 .AniBlock.brother:hover{
   box-shadow: 8px 8px 5px 0px rgba(180, 152, 0, .7);
 }
+.CAlife:hover{
+  visibility: visible;
+  box-shadow: 4px 4px 8px 0px rgba(10, 200, 10, .7);
+}
+.CAlife:hover .Tip{
+  visibility: visible;
+  top: -60px;
+  left: 0;
+  box-shadow: 4px 4px 8px 0px rgba(10, 200, 10, .7);
+}
 .AniBlock.brother:hover .Tip{
   visibility: visible;
   top: -60px;
@@ -225,6 +327,85 @@ body{
 }
 .AniBlock.brother:hover .simson{
   visibility: visible;
+}
+.period:hover{
+  box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.25);
+}
+.period:hover .Tip{
+  visibility: visible;
+  top: -20px;
+  left: -18px;
+  box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.25);
+}
+.Naruto:hover{
+  box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.25);
+}
+.Naruto:hover .Tip{
+  visibility: visible;
+  width: 55px;
+  top: -20px;
+  left: -20px;
+  box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.25);
+}
+.Marionette:hover{
+  box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.25);
+}
+.Marionette:hover .Tip{
+  visibility: visible;
+  top: -20px;
+  left: -30px;
+  box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.25);
+}
+.Slayers:hover{
+  box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.25);
+}
+.Slayers:hover .Tip{
+  visibility: visible;
+  width: 60px;
+  top: -20px;
+  left: -30px;
+  box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.25);
+}
+
+.Depression.Zero:hover{
+  animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) infinite;
+}
+.Depression.Zero:hover .Tip{
+  visibility: visible;
+  width: 105px;
+  left: -32px;
+}
+.Depression.First:hover{
+  animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) infinite;
+}
+.Depression.First:hover .Tip{
+  visibility: visible;
+  width: 105px;
+  left: -32px;
+}
+.Depression.Second:hover{
+  animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) infinite;
+}
+.Depression.Second:hover .Tip{
+  visibility: visible;
+  left: -18px;
+}
+.Depression.Third:hover{
+  animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) infinite;
+}
+.Depression.Third:hover .Tip{
+  visibility: visible;
+  left: -18px;
+  width: 70px;
+}
+.Depression.Forth:hover{
+  animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) infinite;
+}
+.Depression.Forth:hover .Tip{
+  visibility: visible;
+  width: 108px;
+  top: 54px;
+  left: -33px;
 }
 .married:hover{
   box-shadow: 8px 8px 5px 0px rgba(255, 152, 0, .7);
@@ -242,3 +423,10 @@ body{
 	70% {transform: scale(.9);}
 	100% {opacity: 1; transform: scale(1);}
   }
+
+@keyframes shake {
+  10%, 90% {transform: translate3d(-1px, 0, 0);}
+  20%, 80% {transform: translate3d(2px, 0, 0);}
+  30%, 50%, 70% {transform: translate3d(-4px, 0, 0);}
+  40%, 60% {transform: translate3d(4px, 0, 0);}
+}
